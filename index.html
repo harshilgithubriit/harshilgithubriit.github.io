@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshil Mishra | Gen AI Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- AI Neural Canvas Network -->
+    <canvas id="neuralCanvas"></canvas>
+
+    <!-- Aurora Morphing Background Orbs -->
+    <div class="aurora-orb-container">
+        <div class="aurora-orb orb-purple"></div>
+        <div class="aurora-orb orb-cyan"></div>
+        <div class="aurora-orb orb-blue"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="portfolio-container">
+        <!-- Floating Subtle Header -->
+        <header class="main-header reveal-on-scroll">
+            <div class="logo-area">
+                <span class="logo-symbol">HM</span>
+                <span class="logo-text">Harshil Mishra</span>
+            </div>
+            <div class="status-badge">
+                <span class="status-dot animate-pulse"></span>
+                <span class="status-text">Open for Gen AI & Backend Roles</span>
+            </div>
+        </header>
+
+        <!-- Bento Grid Main Layout -->
+        <main class="bento-grid">
+            
+            <!-- CARD 1: Profile & Greeting Card (Large / Double Column) -->
+            <section class="bento-card card-hero col-span-2 row-span-1 reveal-on-scroll">
+                <div class="hero-content">
+                    <div class="profile-frame">
+                        <img src="https://avatars.githubusercontent.com/u/159920328?v=4" alt="Harshil Mishra Avatar" class="profile-img">
+                        <div class="glow-ring"></div>
+                    </div>
+                    <div class="hero-text">
+                        <span class="greeting-subtitle">Architecting Intelligent Systems</span>
+                        <h1 class="hero-name">Harshil Mishra</h1>
+                        <h2 class="hero-title">
+                            <span class="typewriter-text" data-words='["Gen AI Engineer", "Data Analytics Specialist", "Full-Stack Developer"]'>Gen AI Engineer</span>
+                            <span class="cursor">|</span>
+                        </h2>
+                        <p class="hero-bio">
+                            I am a B.Tech student specializing in **Generative AI pipelines**, **large-scale data analytics**, and robust **backend architecture**. By combining clean database designs with state-of-the-art AI tooling, I construct high-performance digital products that translate intelligent data into stunning interfaces.
+                        </p>
+                    </div>
+                </div>
+                <!-- Mini Stats Sub-row inside Hero -->
+                <div class="hero-quick-stats">
+                    <div class="quick-stat-item">
+                        <span class="stat-num">18+</span>
+                        <span class="stat-label">GitHub Repos</span>
+                    </div>
+                    <div class="quick-stat-item text-bold-purple">
+                        <span class="stat-num">Gen AI</span>
+                        <span class="stat-label">Specialization</span>
+                    </div>
+                    <div class="quick-stat-item">
+                        <span class="stat-num">B.Tech CS</span>
+                        <span class="stat-label">RIIT Student</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 2: Interactive Terminal Mini-Widget (Large / Double Column) -->
+            <section class="bento-card card-terminal col-span-2 row-span-1 reveal-on-scroll">
+                <div class="card-header terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control-dot dot-close"></span>
+                        <span class="control-dot dot-minimize"></span>
+                        <span class="control-dot dot-maximize"></span>
+                    </div>
+                    <div class="terminal-title">
+                        <i class="fa-solid fa-terminal"></i> harshil_console.sh
+                    </div>
+                    <div class="terminal-badge">gen-ai-active</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <div class="terminal-output">
+                        <p class="terminal-line text-cyan">System check initialized... Success.</p>
+                        <p class="terminal-line">Connecting to local_brain_host...</p>
+                        <p class="terminal-line text-green">[OK] Loaded profile for: HARSHIL MISHRA (Gen AI Engineer)</p>
+                        <p class="terminal-line text-muted">Type <span class="text-yellow">help</span> to view available terminal commands, or try <span class="text-yellow">skills</span> or <span class="text-yellow">projects</span>.</p>
+                        <br>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="terminal-prompt">harshil@riit-pc:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" autofocus placeholder="Type a command...">
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 3: Categorized Tech Stack (Medium / Single Column) -->
+            <section class="bento-card card-skills col-span-1 row-span-2 reveal-on-scroll">
+                <h3 class="card-title"><i class="fa-solid fa-cube text-purple"></i> Skills & Stack</h3>
+                <p class="card-desc">My professional toolbox from LinkedIn & GitHub</p>
+                <div class="skills-wrapper">
+                    <!-- Gen AI Group -->
+                    <div class="skills-cat-group">
+                        <span class="skills-cat-title">Gen AI & ML</span>
+                        <div class="skills-grid-grouped">
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-brain text-purple"></i><span>LLMs</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-link text-cyan"></i><span>LangChain</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-server text-green"></i><span>Vector DBs</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-circle-nodes text-purple"></i><span>NLP</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-keyboard text-yellow"></i><span>Prompt Eng.</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Databases Group -->
+                    <div class="skills-cat-group">
+                        <span class="skills-cat-title">Backend & Data</span>
+                        <div class="skills-grid-grouped">
+                            <div class="skill-pill-grouped"><i class="fab fa-python text-blue"></i><span>Python</span></div>
+                            <div class="skill-pill-grouped"><i class="fab fa-node-js text-green"></i><span>Node.js</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-database text-blue"></i><span>MySQL</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-leaf text-green"></i><span>MongoDB</span></div>
+                            <div class="skill-pill-grouped"><i class="fab fa-php text-purple"></i><span>PHP</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Languages & Frameworks Group -->
+                    <div class="skills-cat-group">
+                        <span class="skills-cat-title">Languages & Web</span>
+                        <div class="skills-grid-grouped">
+                            <div class="skill-pill-grouped"><i class="fab fa-js text-yellow"></i><span>JS</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-code text-blue"></i><span>TypeScript</span></div>
+                            <div class="skill-pill-grouped"><i class="fab fa-java text-orange"></i><span>Java</span></div>
+                            <div class="skill-pill-grouped"><i class="fab fa-react text-cyan"></i><span>React</span></div>
+                            <div class="skill-pill-grouped"><i class="fab fa-html5 text-orange"></i><span>HTML/CSS</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Group -->
+                    <div class="skills-cat-group">
+                        <span class="skills-cat-title">Developer Tools</span>
+                        <div class="skills-grid-grouped">
+                            <div class="skill-pill-grouped"><i class="fab fa-git-alt text-orange"></i><span>Git</span></div>
+                            <div class="skill-pill-grouped"><i class="fab fa-github text-white"></i><span>GitHub</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-chart-line text-cyan"></i><span>Jupyter</span></div>
+                            <div class="skill-pill-grouped"><i class="fa-solid fa-terminal text-yellow"></i><span>VS Code</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 4: Expanded Project Grid (Double-wide / Double Column) -->
+            <section class="bento-card card-projects col-span-2 row-span-2 reveal-on-scroll">
+                <div class="projects-header-area">
+                    <div>
+                        <h3 class="card-title"><i class="fa-solid fa-folder-open text-cyan"></i> Project Repository</h3>
+                        <p class="card-desc">Showcase of built applications & system designs</p>
+                    </div>
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="ai">AI / GenAI</button>
+                        <button class="filter-btn" data-filter="backend">Backend</button>
+                        <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                    </div>
+                </div>
+
+                <div class="projects-list">
+                    <!-- Project 1: AI Career Copilot -->
+                    <div class="project-item" data-category="ai">
+                        <div class="project-icon-box bg-purple-glow">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h4 class="project-name">AI Career Copilot</h4>
+                                <span class="project-tag">Gen AI</span>
+                            </div>
+                            <p class="project-text">Intelligent profile reviews and automated resume grading pipelines utilizing Large Language Models to map custom carrier roadmaps.</p>
+                            <div class="project-tech-row">
+                                <span><i class="fab fa-js"></i> JavaScript</span>
+                                <span><i class="fa-solid fa-gears"></i> OpenAI API</span>
+                                <span><i class="fa-solid fa-robot"></i> Prompt Eng.</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/harshilgithubriit/ai-career-copilot" target="_blank" class="project-link-btn" aria-label="View AI Career Copilot Code">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 2: Medical Chatbot -->
+                    <div class="project-item" data-category="ai">
+                        <div class="project-icon-box bg-green-glow">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h4 class="project-name">Medical ChatBot API</h4>
+                                <span class="project-tag">Gen AI / NLP</span>
+                            </div>
+                            <p class="project-text">Intelligent conversational agent constructed in Python that answers common medical inquiries, utilizing natural language indexing.</p>
+                            <div class="project-tech-row">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span><i class="fa-solid fa-microchip"></i> NLP</span>
+                                <span><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/harshilgithubriit/Medical-ChatBot-PYTHON-" target="_blank" class="project-link-btn" aria-label="View Medical Chatbot Code">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 3: Student Management Backend -->
+                    <div class="project-item" data-category="backend">
+                        <div class="project-icon-box bg-purple-glow">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h4 class="project-name">Student Management System Backend</h4>
+                                <span class="project-tag">Backend</span>
+                            </div>
+                            <p class="project-text">Secure, high-performance backend database management system implemented using Node.js, Express, MongoDB, and JWT authentication.</p>
+                            <div class="project-tech-row">
+                                <span><i class="fab fa-node-js"></i> Node.js</span>
+                                <span><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                                <span><i class="fa-solid fa-shield"></i> JWT</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/harshilgithubriit/student-management-system-backend" target="_blank" class="project-link-btn" aria-label="View Student Management System Code">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 4: House Sale EDA Regression -->
+                    <div class="project-item" data-category="analytics">
+                        <div class="project-icon-box bg-cyan-glow">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h4 class="project-name">House Sale Analysis & EDA Regression</h4>
+                                <span class="project-tag">Data Analytics</span>
+                            </div>
+                            <p class="project-text">Advanced exploratory data analytics pipeline and regression models in Python to predict transactional housing prices.</p>
+                            <div class="project-tech-row">
+                                <span><i class="fab fa-python"></i> Jupyter Notebook</span>
+                                <span><i class="fa-solid fa-calculator"></i> Regression</span>
+                                <span><i class="fa-solid fa-magnifying-glass-chart"></i> EDA</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/harshilgithubriit/House-Sale-Analysis-EDA-Regression-Python" target="_blank" class="project-link-btn" aria-label="View House Sale Analysis Code">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 5: HR Analytics Dashboard -->
+                    <div class="project-item" data-category="analytics">
+                        <div class="project-icon-box bg-cyan-glow">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h4 class="project-name">HR Analytics Dashboard</h4>
+                                <span class="project-tag">Data Analytics</span>
+                            </div>
+                            <p class="project-text">Interactive analysis of internal employee metrics, tracking attrition trends, training effectiveness, and retention indicators.</p>
+                            <div class="project-tech-row">
+                                <span><i class="fa-solid fa-database"></i> SQL</span>
+                                <span><i class="fa-solid fa-chart-pie"></i> Visual Dashboard</span>
+                                <span><i class="fa-solid fa-chart-area"></i> Analytics</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/harshilgithubriit/HR-Analytics-Dashboard" target="_blank" class="project-link-btn" aria-label="View HR Dashboard Code">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 6: AmplifyEase Chatbot Widget -->
+                    <div class="project-item" data-category="ai">
+                        <div class="project-icon-box bg-blue-glow">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h4 class="project-name">AmplifyEase Chatbot Widget</h4>
+                                <span class="project-tag">Gen AI</span>
+                            </div>
+                            <p class="project-text">Embeddable chatbot dialog widget constructed using custom JavaScript arrays for instant client evaluation workflows.</p>
+                            <div class="project-tech-row">
+                                <span><i class="fab fa-js"></i> JavaScript</span>
+                                <span><i class="fab fa-html5"></i> HTML5</span>
+                                <span><i class="fa-solid fa-network-wired"></i> Widget API</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/harshilgithubriit/amplifyease-chatbot" target="_blank" class="project-link-btn" aria-label="View AmplifyEase Chatbot Code">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 7: Whisperbox -->
+                    <div class="project-item" data-category="web">
+                        <div class="project-icon-box bg-blue-glow">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h4 class="project-name">Whisperbox Communication Suite</h4>
+                                <span class="project-tag">Web UI</span>
+                            </div>
+                            <p class="project-text">Secure static messaging frontends built using responsive elements and complete TypeScript typing schemes.</p>
+                            <div class="project-tech-row">
+                                <span><i class="fa-solid fa-code"></i> TypeScript</span>
+                                <span><i class="fab fa-html5"></i> HTML5</span>
+                                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/harshilgithubriit/whisperbox" target="_blank" class="project-link-btn" aria-label="View Whisperbox Code">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 5: GitHub Stats (Medium / Single Column) -->
+            <section class="bento-card card-stats col-span-1 row-span-1 reveal-on-scroll">
+                <h3 class="card-title"><i class="fa-solid fa-chart-line text-green"></i> Activity & Insights</h3>
+                <p class="card-desc">Live coding insights and progress metrics</p>
+                <div class="stats-showcase">
+                    <div class="stat-row">
+                        <div class="stat-progress-label">
+                            <span>Generative AI Pipelines</span>
+                            <span class="text-green">94%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill bg-green" style="width: 94%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-progress-label">
+                            <span>Backend (Node / SQL)</span>
+                            <span class="text-purple">88%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill bg-purple" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-progress-label">
+                            <span>Data Analysis & EDA</span>
+                            <span class="text-cyan">91%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill bg-cyan" style="width: 91%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="git-quick-stats">
+                    <div class="git-stat">
+                        <span class="git-val">150+</span>
+                        <span class="git-lbl">Commits</span>
+                    </div>
+                    <div class="git-stat">
+                        <span class="git-val">18</span>
+                        <span class="git-lbl">Repos</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 6: Connect / Contact Area (Medium / Single Column) -->
+            <section class="bento-card card-connect col-span-1 row-span-1 reveal-on-scroll">
+                <h3 class="card-title"><i class="fa-solid fa-paper-plane text-yellow"></i> Let's Connect</h3>
+                <p class="card-desc">Open for research and development inquiries</p>
+                
+                <div class="connect-action-list">
+                    <a href="mailto:harshmishra45072@gmail.com" class="connect-btn-main">
+                        <i class="fa-solid fa-envelope"></i> Send Email
+                    </a>
+                    
+                    <div class="social-links-row">
+                        <a href="https://www.linkedin.com/in/harshilmishra060/" target="_blank" class="social-icon-btn linkedin" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/harshilgithubriit" target="_blank" class="social-icon-btn github" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:harshmishra45072@gmail.com" class="social-icon-btn email" aria-label="Email Link">
+                            <i class="fa-solid fa-envelope-open"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Dynamic Glassmorphic Footer -->
+        <footer class="main-footer reveal-on-scroll">
+            <p class="footer-copy">&copy; 2026 Harshil Mishra. Crafted with raw elegance, glassmorphism & AI neural particles.</p>
+            <div class="footer-links">
+                <a href="https://github.com/harshilgithubriit" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/harshilmishra060/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Main JS Code -->
+    <script src="script.js"></script>
+</body>
+</html>
