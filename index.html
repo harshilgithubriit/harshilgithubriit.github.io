@@ -373,26 +373,93 @@
                 </div>
             </section>
 
-            <!-- CARD 6: Connect / Contact Area (Medium / Single Column) -->
+            <!-- CARD 6: Connect & Contact Form (Single Column / Glassmorphic) -->
             <section class="bento-card card-connect col-span-1 row-span-1 reveal-on-scroll">
                 <h3 class="card-title"><i class="fa-solid fa-paper-plane text-yellow"></i> Let's Connect</h3>
                 <p class="card-desc">Open for research and development inquiries</p>
                 
-                <div class="connect-action-list">
-                    <a href="mailto:harshmishra45072@gmail.com" class="connect-btn-main">
-                        <i class="fa-solid fa-envelope"></i> Send Email
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" class="form-input" placeholder="Your Email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" class="form-input form-textarea" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="connect-btn-main" id="contact-submit-btn">
+                        <span id="btn-text-content"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                        <span id="btn-spinner-content" class="hidden"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+                    </button>
+                </form>
+
+                <div class="social-links-row">
+                    <a href="https://www.linkedin.com/in/harshilmishra060/" target="_blank" class="social-icon-btn linkedin" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
-                    
-                    <div class="social-links-row">
-                        <a href="https://www.linkedin.com/in/harshilmishra060/" target="_blank" class="social-icon-btn linkedin" aria-label="LinkedIn Profile">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/harshilgithubriit" target="_blank" class="social-icon-btn github" aria-label="GitHub Profile">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:harshmishra45072@gmail.com" class="social-icon-btn email" aria-label="Email Link">
-                            <i class="fa-solid fa-envelope-open"></i>
-                        </a>
+                    <a href="https://github.com/harshilgithubriit" target="_blank" class="social-icon-btn github" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:harshmishra45072@gmail.com" class="social-icon-btn email" aria-label="Email Link">
+                        <i class="fa-solid fa-envelope-open"></i>
+                    </a>
+                </div>
+
+                <!-- Success Overlay -->
+                <div class="form-success-overlay hidden" id="contact-success-overlay">
+                    <div class="success-content">
+                        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <h4>Message Sent!</h4>
+                        <p>I will get back to you shortly.</p>
+                        <button type="button" class="btn-reset-form" id="contact-success-reset">Send Another</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 7: Education & Experience Timeline (Double Column) -->
+            <section class="bento-card card-timeline col-span-2 row-span-1 reveal-on-scroll">
+                <h3 class="card-title"><i class="fa-solid fa-graduation-cap text-purple"></i> Education & Experience</h3>
+                <p class="card-desc">My academic background and developer journey</p>
+                
+                <div class="timeline-container">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot dot-cyan"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4 class="timeline-role">B.Tech in Computer Science & Engineering</h4>
+                                <span class="timeline-date">2023 - Present</span>
+                            </div>
+                            <span class="timeline-institution">Roorkee Institute of Technology (RIT)</span>
+                            <p class="timeline-desc">Specializing in Generative AI pipelines, large-scale data analytics, and database architectures. Maintaining strong academic standing while building advanced AI agents.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot dot-purple"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4 class="timeline-role">Self-Employed / Open-Source Developer</h4>
+                                <span class="timeline-date">2024 - Present</span>
+                            </div>
+                            <span class="timeline-institution">GitHub & Community Contributions</span>
+                            <p class="timeline-desc">Designed and deployed multiple open-source AI projects including the <em>AI Career Copilot</em> and <em>Medical Chatbot API</em>. Developed vector search integrations, LLM prompts, and RAG patterns.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot dot-blue"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4 class="timeline-role">Backend & Database Specialist</h4>
+                                <span class="timeline-date">2023 - 2024</span>
+                            </div>
+                            <span class="timeline-institution">Independent Projects</span>
+                            <p class="timeline-desc">Created secure backend APIs using Node.js, Express, and JWT. Structured and optimized relational and non-relational database schemas in MySQL and MongoDB.</p>
+                        </div>
                     </div>
                 </div>
             </section>

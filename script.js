@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 6. Initialize Scroll Reveal Animations (Apple Vision Pro effect)
     initScrollReveal();
+
+    // 7. Initialize Interactive Contact Form
+    initContactForm();
 });
 
 /* ==========================================================================
@@ -435,4 +438,55 @@ function initScrollReveal() {
     revealElements.forEach(el => {
         observer.observe(el);
     });
+}
+
+/* ==========================================================================
+   7. INTERACTIVE CONTACT FORM SUBMISSION
+   ========================================================================== */
+function initContactForm() {
+    const form = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("contact-submit-btn");
+    const textContent = document.getElementById("btn-text-content");
+    const spinnerContent = document.getElementById("btn-spinner-content");
+    const successOverlay = document.getElementById("contact-success-overlay");
+    const resetBtn = document.getElementById("contact-success-reset");
+
+    if (!form || !submitBtn || !successOverlay) return;
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // 1. Enter Loading State
+        submitBtn.disabled = true;
+        if (textContent) textContent.classList.add("hidden");
+        if (spinnerContent) spinnerContent.classList.remove("hidden");
+
+        // 2. Simulate Network Request (1.5s delay like a premium modern application)
+        setTimeout(() => {
+            // 3. Show Success Overlay
+            successOverlay.classList.remove("hidden");
+            // Trigger browser rendering cycle to allow transition
+            setTimeout(() => {
+                successOverlay.classList.add("active");
+            }, 10);
+
+            // 4. Reset Button States
+            submitBtn.disabled = false;
+            if (textContent) textContent.classList.remove("hidden");
+            if (spinnerContent) spinnerContent.classList.add("hidden");
+
+            // 5. Reset inputs
+            form.reset();
+        }, 1500);
+    });
+
+    if (resetBtn) {
+        resetBtn.addEventListener("click", () => {
+            // Hide Success Overlay
+            successOverlay.classList.remove("active");
+            setTimeout(() => {
+                successOverlay.classList.add("hidden");
+            }, 400); // Wait for transition duration
+        });
+    }
 }
